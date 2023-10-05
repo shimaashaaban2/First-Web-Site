@@ -11,15 +11,16 @@ body{
 /**
 -------header*****************************************/
 .header{
-    background-color: rgba(0, 0, 0, .86);
+    background-color: rgb(0 0 0 / 69%);
     color: #fff;
     width: 100%;
     position: fixed;
     z-index: 10;
 }
 .logo-img{
-    width: 80px;
-    height: 70px;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
     margin-left: 150px;
     background-color: black;
     opacity: 2.5;
@@ -44,8 +45,7 @@ body{
     color: white;
 }
 
-/*
-------------------Home********/
+/*------------------Home-------------------*/
 .home{
     height: 100vh;
     background-image: url('../images/home-img\ \(2\).jpg');
@@ -61,6 +61,7 @@ body{
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
 }
+
 .home-content{
     width: 65%;
     height: 120px;
@@ -109,6 +110,7 @@ body{
 .ul-head li a:hover:after{
     width: 55px;
     height: 3px;
+   
 }
 .ul-head li a.active::after{
     width: 100%;
@@ -289,7 +291,9 @@ body{
     visibility: visible;
 }
 
-
+.feature-img{
+    border-radius: 10%;
+}
 
     /************************************************OFFER*********************************************************/
     .container3{
@@ -390,6 +394,7 @@ body{
     background-color: #a8a8a8;
     margin: 10px 5px;
     border-radius: 50%;
+    cursor: pointer;
 }
 .service-bullets li:hover{
     background-color: #537cce;   
@@ -581,8 +586,14 @@ body{
     width: 80%;
     height: 300px;
     margin: auto;
-    /* background-color: gray; */
 }
+
+
+
+
+
+
+
 .team-item{
     float: left;
     background-color: rgb(131, 152, 212);
@@ -591,9 +602,9 @@ body{
     text-align: center;
     position: relative;
 }
-/* .div2{
+.div2{
     margin: 0 5%;
-} */
+}
 .team-img{
     width:100%;
     margin:auto;
@@ -627,24 +638,8 @@ body{
 .team-overlay a i{
     line-height:45px ;
 }
-.team-info-title {
-    color: #222;
-    padding: 10px 0;
-}
-.team-info-text{
+.team-info-p{
     color: rgb(39, 38, 38);
-    font-weight: 600;
-}
-.team-item:hover .team-info-title{
-    color:#fff;
-    transition:  .5s;
-}
-.team-item:hover .team-info-text{
-    color: blue;
-    transition: 1s;
-}
-.team-info-p:hover::after{
-    color:#eee
 }
 .team-item:after{
     position: absolute;
